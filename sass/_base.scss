@@ -1,0 +1,39 @@
+$color-black: #222831;
+$color-dark-grey: #393e46;
+$color-light-grey: #5a6473;
+$color-light-blue: #00adb5;
+$color-orange: #d38e2a;
+
+$color-js: #f0db4f;
+$color-html: linear-gradient(130deg, #e44d26 0%, #e44d26 50%, #f16529 50%);
+$color-css: linear-gradient(130deg, #3c99dc 0%, #3c99dc 50%, #66d3fa 50%);
+
+//Fonts
+/* 
+font-family: "Indie Flower", cursive; // Logo font
+font-family: "Montserrat", sans-serif; // Main Font
+*/
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}

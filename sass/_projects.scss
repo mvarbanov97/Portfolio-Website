@@ -1,0 +1,125 @@
+#section-projects {
+  padding: 10rem 5rem;
+  min-height: 50vh;
+  background-color: $color-light-grey;
+  @media only screen and (max-width: 600px) {
+    padding: 5rem;
+  }
+  h2 {
+    text-align: start;
+    color: #fff;
+  }
+}
+
+.carousel {
+  .flickity-page-dots li {
+    background-color: $color-orange;
+  }
+  @media only screen and (max-width: 500px) {
+    .flickity-button {
+      display: none;
+    }
+    .flickity-page-dots {
+      display: none;
+    }
+  }
+}
+
+.carousel-cell {
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  margin: 3rem 8rem;
+  width: 45rem;
+  height: 45rem;
+  background-color: $color-black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.7s ease;
+  transform: scale(0.7);
+  opacity: 0.3;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.7);
+
+  @media only screen and (max-width: 600px) {
+    width: 30rem;
+    height: 30rem;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+.carousel-cell.is-selected {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project {
+  &__info {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    );
+  }
+
+  &__1 {
+    background-image: url(../projects/easyB.png);
+  }
+  &__2 {
+    background-image: url(../projects/fylo.png);
+  }
+  &__3 {
+    background-image: url(../projects/manage.png);
+  }
+  &__4 {
+    background-image: url(../projects/room.png);
+  }
+  &__5 {
+    background-image: url(../projects/nexter.png);
+  }
+  &__6 {
+    background-image: url(../projects/trillo.png);
+  }
+  &__7 {
+    background-image: url(../projects/omnifood.png);
+  }
+  &__8 {
+    background-image: url(../projects/natours.png);
+  }
+  &__9 {
+    background-image: url(../projects/tindog.png);
+  }
+  &__10 {
+    background-image: url(../projects/guess.png);
+  }
+  &__11 {
+    background-image: url(../projects/pig.png);
+  }
+
+  &__12 {
+    background-image: url(../projects/myteam.png);
+  }
+
+  &__13 {
+    background-image: url(../projects/photosnap.png);
+  }
+
+  h6 {
+    font-size: 2rem;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+}
